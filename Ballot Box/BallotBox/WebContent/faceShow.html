@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<img src="./face/faceDetection.jpg" id="face" width="320" height="240">
+<script language="JavaScript">
+window.onload = function() {
+    var image = document.getElementById("face");
+
+    function updateImage() {
+        image.src = image.src.split("?")[0] + "?" + new Date().getTime();
+    }
+
+    setInterval(updateImage, 1000);
+}
+</script>
+
+</body>
+</html>
